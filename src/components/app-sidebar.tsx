@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { GalleryVerticalEnd } from 'lucide-react'
 
 import { Link } from '@tanstack/react-router'
 import type { ToOptions } from '@tanstack/react-router'
@@ -47,8 +46,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           <SidebarMenuItem>
             <SidebarMenuButton size="lg" asChild>
               <a href="/">
-                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
-                  <img src="/swd-logo.png" alt="SWD Logo" className="size-8" />
+                <div className="flex aspect-square size-8 items-center justify-center rounded-lg bg-white p-0.5">
+                  <img src="/swd-logo.png" alt="SWD Logo" className="size-7" />
                 </div>
                 <div className="flex flex-col gap-0.5 leading-none">
                   <span className="font-medium">SWD - Frontend Test</span>

@@ -1,10 +1,12 @@
-import Header, { HeaderAssignment } from '#/components/features/header'
-import { Separator } from '#/components/ui/separator'
+// Brief section commented out so the page shows only the editor; uncomment it and these imports to restore.
+// import Header, { HeaderAssignment } from '#/components/features/header'
+// import { Separator } from '#/components/ui/separator'
 import YourCode from './your-codes'
 
 const FeatureFlagAssignment = () => {
   return (
     <div className="bg-background text-foreground p-0 font-sans box-border">
+      {/* Code challenge brief, hidden so the page shows only the editor. Uncomment to show it again.
       <Header
         title="Coding Challenge: The Feature Flag Editor"
         subTitle={
@@ -89,7 +91,7 @@ const FeatureFlagAssignment = () => {
           </div>
         </section>
 
-        {/* ฝั่งขวา: ตัวอย่างโครงสร้างข้อมูล (The Schema) */}
+        ฝั่งขวา: ตัวอย่างโครงสร้างข้อมูล (The Schema)
         <section className="space-y-5">
           <div className="bg-slate-950 rounded-xl border border-border overflow-hidden">
             <div className="bg-slate-900 px-4 py-2 border-b border-border flex justify-between items-center">
@@ -137,6 +139,7 @@ const FeatureFlagAssignment = () => {
       </main>
 
       <Separator className="my-5 bg-slate-700" />
+      */}
 
       <YourCode />
     </div>

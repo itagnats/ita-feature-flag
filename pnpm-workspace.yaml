@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: true
+  msw: false
+  unrs-resolver: true
+
+overrides:
+  '@tanstack/router-core': 1.168.9

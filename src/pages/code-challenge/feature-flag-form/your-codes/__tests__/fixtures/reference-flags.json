@@ -1,0 +1,44 @@
+{
+  "flags": {
+    "my-new-feature": {
+      "variations": {
+        "on": true,
+        "off": false
+      },
+      "targeting": [
+        {
+          "name": "Beta users",
+          "query": "group eq \"beta\"",
+          "percentage": {
+            "on": 50,
+            "off": 50
+          }
+        },
+        {
+          "name": "Editors in TH",
+          "query": "role in [\"admin\",\"editor\"] and (country eq \"TH\" or not (app_version lt 2.0.0))",
+          "variation": "on"
+        }
+      ],
+      "defaultRule": {
+        "variation": "off"
+      },
+      "disable": true,
+      "trackEvents": false,
+      "version": "1.0.0",
+      "metadata": {
+        "jira": "FF-12",
+        "description": "New checkout page"
+      }
+    },
+    "simple-flag": {
+      "variations": {
+        "Variation_1": true,
+        "Variation_2": false
+      },
+      "defaultRule": {
+        "variation": "Variation_1"
+      }
+    }
+  }
+}

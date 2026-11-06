@@ -1,14 +1,7 @@
-import Header from '#/components/features/header'
+import FeatureFlagEditor from './components/FeatureFlagEditor'
 
 function YourCode() {
-  return (
-    <section>
-      <Header
-        title="Create Your Code Here"
-        subTitle="คุณสามารถเขียนโค้ดของคุณได้ที่นี่และลบโค๊ดตัวอย่างทิ้งได้เลย"
-      />
-    </section>
-  )
+  return <FeatureFlagEditor />
 }
 
 export default YourCode
